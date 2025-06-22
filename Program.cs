@@ -1,15 +1,17 @@
 using EmployeePortal.Data;
+using EmployeePortal.Repositories; // Add this if EmployeeRepository is in the Repositories namespace
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
 builder.Services.AddControllers();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Add CORS
-builder.Services.AddCors(options =>
+builder.Services.AddCors(options =>   
 {
     options.AddPolicy("AllowAll", policy =>
         policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
@@ -28,9 +30,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseHttpsRedirection();      
 app.UseCors("AllowAll");
-
+    
 app.UseAuthorization();
 app.MapControllers();
 

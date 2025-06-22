@@ -167,3 +167,4 @@ C:\Users\Ali Ahsan\Desktop\Crud_Project\EmployeePortal\obj\Debug\net8.0\refint\E
 C:\Users\Ali Ahsan\Desktop\Crud_Project\EmployeePortal\obj\Debug\net8.0\EmployeePortal.pdb
 C:\Users\Ali Ahsan\Desktop\Crud_Project\EmployeePortal\obj\Debug\net8.0\EmployeePortal.genruntimeconfig.cache
 C:\Users\Ali Ahsan\Desktop\Crud_Project\EmployeePortal\obj\Debug\net8.0\ref\EmployeePortal.dll
+C:\Users\Ali Ahsan\Desktop\Crud_Project\EmployeePortal\obj\Debug\net8.0\EmployeePortal.sourcelink.json

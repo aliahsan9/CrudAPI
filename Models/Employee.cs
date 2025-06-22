@@ -22,3 +22,4 @@ namespace EmployeePortal.Models
         public int Salary { get; set; }
     }
 }
+     
